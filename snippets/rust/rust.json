@@ -253,7 +253,7 @@
     "extern-fn": {
         "prefix": "extern-fn",
         "body": [
-            "extern \"C\" fn ${1:name}(${2:arg}: ${3:Type}) -> ${4:RetType} {",
+            "extern \"C\" fn ${1:name}(${2:arg}: ${3:Type}) -> ${4:_} {",
             "    ${5:// add code here}",
             "}"
         ],
@@ -267,7 +267,7 @@
     "pfn": {
         "prefix": "pfn",
         "body": [
-            "pub fn ${1:name}(${2:arg}: ${3:Type}) -> ${4:RetType} {",
+            "pub fn ${1:name}(${2:arg}: ${3:Type}) -> ${4:_} {",
             "    ${5:unimplemented!();}",
             "}"
         ],
@@ -276,7 +276,7 @@
     "fn": {
         "prefix": "fn",
         "body": [
-            "fn ${1:name}(${2:arg}: ${3:Type}) -> ${4:RetType} {",
+            "fn ${1:name}(${2:arg}: ${3:Type}) -> ${4:_} {",
             "    ${5:unimplemented!();}",
             "}"
         ],
